@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+html{
+  background-color: rgb(240,240,240);
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body > .navbar{
+  width: 100%;
+  background: #555555;
+  padding: 0;
+  
+}
+nav{
+  display:flex;
+  justify-content: space-between;
+  max-width: 200px;
+  height: 50px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+nav a{
+  flex:1;
+  text-align: center;
+  text-decoration: none;
+  color: lightgray;
+  font-size: 24px;
+  margin:0 10px;
+  padding: 5px;
+}
+
+nav a:hover {
+  box-shadow: .1px .1px 10px black;
+  border-radius: 2px;
+  background: #666666
+}
+
+.stats{
+  font-size: 1.2em;
+  padding-left: 25px;
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+h1{
+  color: #444444;
+  font-size: 52px;
+  margin-bottom: none;
+}
+
+
+.characters .character {
+  min-width: 200px;
+  height: 400px;
+  background: radial-gradient(rgba(243, 195, 105, 0.5), rgba(238, 175, 133, 0.5), rgba(211, 62, 62, 0.5));
+  margin: 10px;
+  border-radius: 3px;
+  box-shadow: 1px 4px 10px rgba(0,0,0,.5);
+  border: solid black 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.characters .character:hover{
+  transition: .2s;
+  box-shadow:none;
+}
+
+
+
+.characters .character .number {
+  color: #222222;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.characters .character .name  {
+  font-size: 24px;
+  border-bottom: 1px solid rgba(0,0,0,.5);
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+}
+.link a{
+  text-decoration: none;
+  color: grey;
+
+}
+
+.link a:hover{
+  text-decoration: none;
+  color: darkgray;
+  
+}
+
+
+
+.indiv-char > div {
+  width: 400px;
+  margin: 0 auto;
+  background: url('https://openclipart.org/download/243741/grass-layered.svg');
+  background-position: bottom;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,1);
+  border: solid black 1px;
+  border-radius: 3px;
+  
+}
+
+.indiv-char > div .char-name {
+  font-size: 34px;
+}
+
+.indiv-char > div .char-img img{
+  width: 200px;
+}
+
+.indiv-char > div .char-number {
+  font-size: 20px;
+} 

@@ -1,0 +1,14 @@
+<h1>A wild {{character.name ? character.name : 'loading'}} has appeared</h1>
+<div class="indiv-char">
+    <div>
+        <div class="char-name">
+            {{character.name ? character.name : 'loading'}}
+        </div>
+        <div class="char-img">
+                <img ng-src={{character.url}}>
+        </div>
+        <div class="char-number">
+            Pokemon #{{character.number ? character.number : 'loading'}}
+        </div>
+    </div>
+</div> 
